@@ -1,10 +1,11 @@
 #include "main.h"
 
-/*
- * main - main block
- * Description: A program that prints _putchar
- * Return: Always 0 (success)
+/**
+ * main - Enrty point
+ * Description: print _putchar with a new line
+ * Return: Always 0
  */
+
 int main(void)
 {
 	_putchar('_');
@@ -16,6 +17,5 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
-
 	return (0);
 }
