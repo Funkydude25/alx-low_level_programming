@@ -2,7 +2,6 @@
 
 /**
  * print_most_numbers -> Function
- *
  */
 void print_most_numbers(void)
 {
