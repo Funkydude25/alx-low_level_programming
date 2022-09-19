@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * puts_half -> main function
@@ -8,28 +9,19 @@
  */
 void puts_half(char *str)
 {
-	int n;
-	int i;
+	int i, n, len = 0;
 
-	while (str[n])
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		n++;
+		len++;
 	}
 
-	if (n % 2 == 1)
-	{
-		i = (n - 1) / 2;
-		i = n - i;
-	}
+	n = (len / 2);
 
-	else
-	{
-		i = n / 2;
-	}
+	if ((len % 2) == 1)
+		n = ((len - 1) / 2);
 
-	for (; str[i]; i++)
-	{
+	for (i = n; str[i] != '\0'; i++)
 		_putchar(str[i]);
-	}
-	_putchar('\n');
+	_putchar('\n')
 }
