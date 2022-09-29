@@ -4,12 +4,12 @@ int bandersnatch(char *s1, char *s2);
 char *move(char *s2);
 
 /**
- * wildcmp - compares two strings recursively
+ * wildcmp - compares two strings recursively,
  * checking for wildcards expansion
  * @s1: first string to compare
  * @s2: second string to compare
  *
- * Return: 1 if strings can be considered identical
+ * Return: 1 if the strings can be considered identical
  * otherwise 0
  */
 int wildcmp(char *s1, char *s2)
