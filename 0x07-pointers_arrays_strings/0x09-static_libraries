@@ -1,35 +1,18 @@
 #include "main.h"
 
 /**
- * _strstr - locate a substring
- * @haystack: the string to search
- * @needle: the string to find
- *
- * Return: char value
+ * _memset -> this is a memory set function
+ * @s: a string
+ * @b: a character
+ * @n: an integer
+ * Return: a string
  */
-char *_strstr(char *haystack, char *needle)
+char *_memset(char *s, char b, unsigned int n)
 {
-	int a = 0, b = 0;
+	unsigned int a;
 
-	while (haystack[a])
-	{
-		while (needle[b])
-		{
-			if (haystack[a + b] != needle[b])
-			{
-				break;
-			}
+	for (a = 0; a < n; a++)
+		s[a] = b;
 
-			b++;
-		}
-
-		if (needle[b] == '\0')
-		{
-			return (haystack + a);
-		}
-
-		a++
-	}
-
-	return ('\0');
+	return (s);
 }
